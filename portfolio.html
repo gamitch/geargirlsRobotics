@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Gear Girls FTC #23469</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .portfolio-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      transition: transform 0.2s;
+    }
+    .portfolio-card:hover { transform: translateY(-4px); }
+    .portfolio-card-header {
+      background: var(--brand-dark);
+      color: white;
+      padding: 2rem 2rem 1.5rem;
+    }
+    .portfolio-card-header .season-year {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--brand-mid);
+      margin-bottom: 0.4rem;
+    }
+    .portfolio-card-header h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .portfolio-card-header .game-name {
+      font-size: 0.9rem;
+      opacity: 0.75;
+    }
+    .portfolio-card-body { padding: 1.75rem 2rem 2rem; }
+    .portfolio-awards { list-style: none; margin: 0 0 1.5rem; }
+    .portfolio-awards li {
+      font-size: 0.88rem;
+      color: var(--text-dark);
+      padding: 0.35rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .portfolio-awards li:last-child { border-bottom: none; }
+    .portfolio-awards li::before { content: '🏆'; font-size: 0.8rem; }
+    .portfolio-stats {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1.75rem;
+      flex-wrap: wrap;
+    }
+    .portfolio-stat { text-align: center; }
+    .portfolio-stat .num { font-size: 1.4rem; font-weight: 700; color: var(--brand-primary); }
+    .portfolio-stat .lbl { font-size: 0.75rem; color: var(--text-faded); margin-top: 0.1rem; }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .badge {
+      background: var(--brand-pale);
+      color: var(--brand-primary);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 100px;
+      border: 1px solid var(--brand-light);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Gear <span>Girls</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="awards.html">Awards</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+    <li><a href="sponsorships.html">Sponsorships</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="page-hero">
+  <h1>Team Portfolio</h1>
+  <p>Our engineering documentation, outreach records, and season highlights — one document per season.</p>
+</div>
+
+<!-- INTRO -->
+<section class="bg-white">
+  <div class="container fade-in text-center" style="max-width:700px; margin:0 auto;">
+    <span class="section-tag">Documentation</span>
+    <h2 class="section-title">Our Work, Documented</h2>
+    <p style="color:var(--text-faded); line-height:1.8;">The Gear Girls team portfolio is our primary FTC judging document — capturing our robot engineering process, outreach contributions, team goals, and lessons learned across every season. Download any season below to see the full picture.</p>
+  </div>
+</section>
+
+<!-- PORTFOLIO CARDS -->
+<section style="background: var(--brand-pale);">
+  <div class="container">
+    <div class="portfolio-grid fade-in">
+
+      <!-- 2025-2026 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card-header">
+          <div class="season-year">Current Season · 2025–2026</div>
+          <h3>DECODE</h3>
+          <div class="game-name">FTC Game: DECODE</div>
+        </div>
+        <div class="portfolio-card-body">
+          <div class="badge-row">
+            <span class="badge">Inspire Award 2nd Place</span>
+            <span class="badge">1,900+ People Reached</span>
+            <span class="badge">Advisory Council</span>
+          </div>
+          <div class="portfolio-stats">
+            <div class="portfolio-stat">
+              <div class="num">73+</div>
+              <div class="lbl">Hours</div>
+            </div>
+            <div class="portfolio-stat">
+              <div class="num">12+</div>
+              <div class="lbl">Events</div>
+            </div>
+            <div class="portfolio-stat">
+              <div class="num">2</div>
+              <div class="lbl">FLL Teams Coached</div>
+            </div>
+          </div>
+          <ul class="portfolio-awards">
+            <li>Inspire Award — 2nd Place (Southern Central League Tournament)</li>
+          </ul>
+          <a href="portfolios/GearGirls-2025-2026.pdf" target="_blank" rel="noopener" class="btn btn-dark" style="width:100%; text-align:center; display:block;">Download Portfolio</a>
+        </div>
+      </div>
+
+      <!-- 2024-2025 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card-header">
+          <div class="season-year">2024–2025</div>
+          <h3>Into the Deep</h3>
+          <div class="game-name">FTC Game: Into the Deep</div>
+        </div>
+        <div class="portfolio-card-body">
+          <div class="badge-row">
+            <span class="badge">Motivate Award</span>
+            <span class="badge">Arkansas Championship</span>
+            <span class="badge">11 Sponsors</span>
+          </div>
+          <div class="portfolio-stats">
+            <div class="portfolio-stat">
+              <div class="num">649+</div>
+              <div class="lbl">Cumulative Hours</div>
+            </div>
+            <div class="portfolio-stat">
+              <div class="num">41+</div>
+              <div class="lbl">Events</div>
+            </div>
+            <div class="portfolio-stat">
+              <div class="num">5</div>
+              <div class="lbl">New Members</div>
+            </div>
+          </div>
+          <ul class="portfolio-awards">
+            <li>Motivate Award (Arkansas Championship)</li>
+            <li>Inspire Award — 3rd Place (Central Southern League Tournament)</li>
+          </ul>
+          <a href="portfolios/GearGirls-2024-2025.pdf" target="_blank" rel="noopener" class="btn btn-dark" style="width:100%; text-align:center; display:block;">Download Portfolio</a>
+        </div>
+      </div>
+
+      <!-- 2023-2024 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card-header">
+          <div class="season-year">2022–2023</div>
+          <h3>Centerstage</h3>
+          <div class="game-name">FTC Game: Centerstage</div>
+        </div>
+        <div class="portfolio-card-body">
+          <div class="badge-row">
+            <span class="badge">Design Award</span>
+            <span class="badge">Connect Award 3rd</span>
+          </div>
+          <div class="portfolio-stats">
+            <div class="portfolio-stat">
+              <div class="num">2</div>
+              <div class="lbl">Awards Won</div>
+            </div>
+            <div class="portfolio-stat">
+              <div class="num">IL</div>
+              <div class="lbl">League</div>
+            </div>
+          </div>
+          <ul class="portfolio-awards">
+            <li>Design Award (IL Central Southern League Tournament)</li>
+            <li>Connect Award — 3rd Place (IL Central Southern League Tournament)</li>
+          </ul>
+          <a href="portfolios/GearGirls-2023-2024.pdf" target="_blank" rel="noopener" class="btn btn-dark" style="width:100%; text-align:center; display:block;">Download Portfolio</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- JUDGING NOTE -->
+<section class="bg-white">
+  <div class="container fade-in text-center" style="max-width:650px; margin:0 auto;">
+    <h2 class="section-title">For Judges &amp; Sponsors</h2>
+    <p style="color:var(--text-faded); line-height:1.8;">Our portfolio documents everything — engineering design iterations, CAD work, autonomous strategy, outreach contributions, and team goals. If you're a judge, sponsor, or partner looking to understand who we are and how we work, these documents tell the full story.</p>
+    <a href="contact.html" class="btn btn-dark" style="margin-top:1.5rem; display:inline-block;">Get in Touch</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Location</h4>
+      <p>O'Fallon, Illinois</p>
+    </div>
+    <div class="footer-col">
+      <h4>Team</h4>
+      <p>FTC #23469</p>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <div class="social-links">
+        <a href="contact.html">✉ Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-col footer-right">
+      <div class="footer-brand">Gear Girls</div>
+      <p class="footer-copy">Copyright © 2026 Gear Girls FTC #23469. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

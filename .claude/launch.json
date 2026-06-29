@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "geargirls",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Users/georgemitchom/Downloads/geargirls", "-p", "3457", "--no-clipboard"],
+      "port": 3457
+    }
+  ]
+}
