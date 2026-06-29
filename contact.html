@@ -66,7 +66,10 @@
 
       <!-- FORM -->
       <div class="contact-form-wrap" style="margin:0;">
-        <form id="contactForm" onsubmit="handleSubmit(event)">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="7962691a-cf6f-45a9-86e7-3035980490a1">
+          <input type="hidden" name="subject" value="New Contact - Gear Girls FTC #23469">
+          <input type="hidden" name="redirect" value="false">
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
             <div class="form-group">
               <label for="firstName">First Name</label>
