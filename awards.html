@@ -5,6 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awards – Gear Girls FTC #23469</title>
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .award-season-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+      margin-bottom: 1.5rem;
+    }
+    .award-season-card:hover { transform: translateY(-4px); }
+    .award-season-card:last-child { margin-bottom: 0; }
+
+    .award-card-header {
+      background: var(--brand-dark);
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .award-card-header-left .season-year {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--brand-mid);
+      margin-bottom: 0.3rem;
+    }
+    .award-card-header-left h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 0;
+    }
+    .award-count-badge {
+      background: rgba(156,206,253,0.18);
+      border: 1px solid var(--brand-mid);
+      color: var(--brand-mid);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 100px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .award-card-body { padding: 0.5rem 0; }
+
+    .award-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .award-row:last-child { border-bottom: none; }
+
+    .award-trophy { font-size: 1.4rem; flex-shrink: 0; }
+
+    .award-row-info { flex: 1; min-width: 0; }
+    .award-row-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 0.2rem;
+    }
+    .award-row-event {
+      font-size: 0.82rem;
+      color: var(--text-faded);
+    }
+
+    .award-place-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 5px 12px;
+      border-radius: 100px;
+      color: white;
+      flex-shrink: 0;
+    }
+    .badge-gold   { background: #d97706; }
+    .badge-silver { background: #64748b; }
+    .badge-bronze { background: #92400e; }
+    .badge-blue   { background: var(--brand-primary); }
+  </style>
 </head>
 <body>
 
@@ -40,40 +126,84 @@
 
 <!-- AWARDS BY SEASON -->
 <section style="background: var(--brand-pale);">
-  <div class="container fade-in">
+  <div class="container fade-in" style="max-width:800px; margin:0 auto;">
 
     <!-- 2025-2026 DECODE -->
-    <p class="award-season">2025–2026 · DECODE</p>
-    <div class="awards-grid">
-      <div class="award-card">
-        <div class="award-name">🏆 Inspire Award — 2nd Place</div>
-        <div class="award-event">Southern Central League Tournament</div>
+    <div class="award-season-card">
+      <div class="award-card-header">
+        <div class="award-card-header-left">
+          <div class="season-year">Current Season · 2025–2026</div>
+          <h3>DECODE</h3>
+        </div>
+        <div class="award-count-badge">1 Award</div>
+      </div>
+      <div class="award-card-body">
+        <div class="award-row">
+          <div class="award-trophy">🏆</div>
+          <div class="award-row-info">
+            <div class="award-row-name">Inspire Award</div>
+            <div class="award-row-event">Southern Central League Tournament</div>
+          </div>
+          <span class="award-place-badge badge-silver">2nd Place</span>
+        </div>
       </div>
     </div>
 
     <!-- 2024-2025 INTO THE DEEP -->
-    <p class="award-season">2024–2025 · Into the Deep</p>
-    <div class="awards-grid">
-      <div class="award-card">
-        <div class="award-name">🏆 Motivate Award</div>
-        <div class="award-event">Arkansas Championship</div>
+    <div class="award-season-card">
+      <div class="award-card-header">
+        <div class="award-card-header-left">
+          <div class="season-year">2024–2025</div>
+          <h3>Into the Deep</h3>
+        </div>
+        <div class="award-count-badge">2 Awards</div>
       </div>
-      <div class="award-card">
-        <div class="award-name">Inspire Award — 3rd Place</div>
-        <div class="award-event">Central Southern League Tournament</div>
+      <div class="award-card-body">
+        <div class="award-row">
+          <div class="award-trophy">🏆</div>
+          <div class="award-row-info">
+            <div class="award-row-name">Motivate Award</div>
+            <div class="award-row-event">Arkansas Championship</div>
+          </div>
+          <span class="award-place-badge badge-blue">Winner</span>
+        </div>
+        <div class="award-row">
+          <div class="award-trophy">🏅</div>
+          <div class="award-row-info">
+            <div class="award-row-name">Inspire Award</div>
+            <div class="award-row-event">Central Southern League Tournament</div>
+          </div>
+          <span class="award-place-badge badge-bronze">3rd Place</span>
+        </div>
       </div>
     </div>
 
-    <!-- 2023-2024 CENTERSTAGE -->
-    <p class="award-season">2022–2023 · Centerstage</p>
-    <div class="awards-grid">
-      <div class="award-card">
-        <div class="award-name">Design Award</div>
-        <div class="award-event">IL Central Southern League Tournament</div>
+    <!-- 2022-2023 CENTERSTAGE -->
+    <div class="award-season-card">
+      <div class="award-card-header">
+        <div class="award-card-header-left">
+          <div class="season-year">2022–2023</div>
+          <h3>Centerstage</h3>
+        </div>
+        <div class="award-count-badge">2 Awards</div>
       </div>
-      <div class="award-card">
-        <div class="award-name">Connect Award — 3rd Place</div>
-        <div class="award-event">IL Central Southern League Tournament</div>
+      <div class="award-card-body">
+        <div class="award-row">
+          <div class="award-trophy">🏆</div>
+          <div class="award-row-info">
+            <div class="award-row-name">Design Award</div>
+            <div class="award-row-event">IL Central Southern League Tournament</div>
+          </div>
+          <span class="award-place-badge badge-blue">Winner</span>
+        </div>
+        <div class="award-row">
+          <div class="award-trophy">🏅</div>
+          <div class="award-row-info">
+            <div class="award-row-name">Connect Award</div>
+            <div class="award-row-event">IL Central Southern League Tournament</div>
+          </div>
+          <span class="award-place-badge badge-bronze">3rd Place</span>
+        </div>
       </div>
     </div>
 
